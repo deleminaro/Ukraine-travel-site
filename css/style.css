@@ -285,8 +285,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    .mobile-menu-btn,
-    .mobile-nav {
+    .mobile-menu-btn {
         display: flex;
     }
 }
