@@ -72,7 +72,7 @@
         <a href="culture.html" class="nav-btn">Culture</a>
         <a href="attractions.html" class="nav-btn">Attractions</a>
     </div>
-    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
         <span></span>
         <span></span>
         <span></span>
@@ -80,10 +80,10 @@
 
     <script src="js/script.js"></script>
     <script>
-        function toggleMobileMenu() {
-            document.querySelector('.mobile-menu-btn').classList.toggle('active');
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            this.classList.toggle('active');
             document.querySelector('.mobile-nav').classList.toggle('show');
-        }
+        });
     </script>
 </body>
 
